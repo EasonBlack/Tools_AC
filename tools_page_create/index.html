@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../style/bootstrap.css" rel="stylesheet"/>
+    <link href="../style/bootstrap-theme.css" rel="stylesheet"/>
+    <link href="style/main.css" rel="stylesheet"/>
+</head>
+<body ng-app="app" ng--controller="appCtrl">
+   <div class="container-fluid">
+       <div class="row">
+           <div class="main-section left-menu" ng-class="{true:'left-display',false:'left-hide'}[MenuDisplay ==true]">
+               <ul>
+                   <li ng-click="to(1)">aaaa</li>
+                   <li>bbbb</li>
+               </ul>
+               <span class="glyphicon glyphicon-minus toggle-button" ng-click="MenuDisplay=false"></span>
+           </div>
+           <div class="main-section right-section"  ng-class="{true:'right-display', false:'right-wider'}[MenuDisplay ==true]">
+               <span class="glyphicon glyphicon-plus toggle-button" ng-show="MenuDisplay==false" ng-click="MenuDisplay=true"></span>
+               <div class="container" ng-view ></div>
+           </div>
+       </div>
+
+
+   </div>
+</body>
+<script src="../vendor/jquery-1.11.1.js"></script>
+<script src="../vendor/angular.js"></script>
+<script src="../vendor/angular-route.js"></script>
+<script src="../vendor/angular-sanitize.js"></script>
+<script src="../vendor/bootstrap.js"></script>
+<script src="../vendor/paging.js"></script>
+<script src="../vendor/ng-lodash.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/app.controller.js"></script>
+<script src="scripts/route.js"></script>
+<script src="views/main.controller.js"></script>
+<script src="views/listheader.controller.js"></script>
+
+
+</html>

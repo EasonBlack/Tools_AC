@@ -1,3 +1,6 @@
+@import 'section.less';
+@import 'formlist.less';
+
 * {
   margin:0;
   padding:0;
@@ -12,11 +15,16 @@ body ,html, .container-fluid, .row {
 
 }
 
+p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
 ul {
-  margin-top:40px;
   list-style:none;
+  color:black;
   li {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
 }
 
@@ -27,17 +35,17 @@ ul {
     transition:all 1s ease;
   }
   .left-display {
-    width: 30%;
+    width: 20%;
     margin-left: 0%;
   }
   .right-display {
-    width: 70%;
+    width: 80%;
     margin-left: 0%;
   }
 
   .left-hide {
-    width: 30%;
-    margin-left: -30%;
+    width: 20%;
+    margin-left: -20%;
   }
   .right-wider {
    width:100%;
@@ -50,11 +58,20 @@ ul {
   position:relative;
 
   ul {
+    margin-top:40px;
+    margin-left:20px;
     display: block;
     position: absolute;
-    top: 40px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
+    font-size:16px;
+
+    li {
+
+    }
   }
+
+
 
   .toggle-button {
     position:absolute;

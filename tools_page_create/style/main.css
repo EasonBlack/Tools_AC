@@ -1,3 +1,52 @@
+.section-container {
+  margin: 15px;
+}
+.section-container .header-tempalte {
+  font-size: 10px;
+  line-height: 55px;
+  background-color: #FFFF99;
+  border: 1px solid #CCCCFF;
+  padding-left: 30px;
+}
+.section-container .result-container {
+  position: relative;
+  font-size: 10px;
+  background-color: #eeeeee;
+  padding-left: 30px;
+  padding-top: 15px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border: 1px solid #0099CC;
+}
+.section-container .result-container li {
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+.section-container .import-wrapper {
+  position: relative;
+  height: 500px;
+}
+.section-container .import-wrapper textarea {
+  width: 100%;
+  height: 90%;
+  border: 1px solid #b2d1d6;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 5px 8px;
+  -webkit-appearance: textarea;
+  background-color: white;
+  resize: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+.formlist textarea {
+  height: 100%;
+}
+.formlist .import-wrapper {
+  height: 100%;
+  margin-top: 20px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +59,16 @@ html,
 .row {
   height: 100%;
 }
+p {
+  font-size: 12px;
+  line-height: 20px;
+}
 ul {
-  margin-top: 40px;
   list-style: none;
+  color: black;
 }
 ul li {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .container-fluid .main-section {
   display: block;
@@ -23,16 +76,16 @@ ul li {
   transition: all 1s ease;
 }
 .container-fluid .left-display {
-  width: 30%;
+  width: 20%;
   margin-left: 0%;
 }
 .container-fluid .right-display {
-  width: 70%;
+  width: 80%;
   margin-left: 0%;
 }
 .container-fluid .left-hide {
-  width: 30%;
-  margin-left: -30%;
+  width: 20%;
+  margin-left: -20%;
 }
 .container-fluid .right-wider {
   width: 100%;
@@ -43,10 +96,13 @@ ul li {
   position: relative;
 }
 .left-menu ul {
+  margin-top: 40px;
+  margin-left: 20px;
   display: block;
   position: absolute;
-  top: 40px;
-  left: 10px;
+  top: 0px;
+  left: 0px;
+  font-size: 16px;
 }
 .left-menu .toggle-button {
   position: absolute;

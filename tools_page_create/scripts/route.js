@@ -10,4 +10,8 @@ angular.module('app')
             templateUrl : 'views/listheader.template.html',
             controller  : 'ListHeaderController'
         })
+        .when('/formlist', {
+            templateUrl : 'views/form.template.html',
+            controller  : 'FormController'
+        })
 }])

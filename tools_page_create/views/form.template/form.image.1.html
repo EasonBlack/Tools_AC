@@ -1,0 +1,21 @@
+<div class="form-group">
+    <label>{{title2}}</label>
+    <div id="pictureUpload" class="picture_upload">
+        <div ng-show="{{pre1}}.picFile[0].dataUrl == null && {{pre1}}.picUrl == null" ng-file-change="generateThumb({{pre1}}.picFile[0], $files)" ng-file-select ng-model="{{pre1}}.picFile" name="file" accept="image/*">
+            <img src="/images/Coupons/NoPhoto.png"
+                 style="width:100%;border-radius: 10px;border:1px solid #cccccc;">
+        </div>
+        <div ng-show="{{pre1}}.picFile[0].dataUrl != null || {{pre1}}.picUrl!=null" class="row">
+            <img id="logo" class="pic-panel-thumb" ng-src="\{{ {{pre1}}.picFile[0].dataUrl || {{pre1}}.picUrl}}"
+                 style="width: 68px;height: 68px;">
+            <div class="pic-detail">
+                <div>
+                    \{{ {{pre1}}.picFile[0].name || '' }}
+                                           <span class="Right">
+                                               <a href="javascropt:void(0)" ng-file-select  ng-model="{{pre1}}.picFile" name="file"   ng-file-change="generateThumb({{pre1}}.picFile[0], $files)"  ng-file-keep="true"   accept="image/*">Change</a>
+                                           </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
